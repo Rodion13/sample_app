@@ -146,6 +146,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activesupport (= 4.0.3)
   capybara (= 2.1.0)
   coffee-rails (= 4.0.1)
   jbuilder (= 1.0.2)
