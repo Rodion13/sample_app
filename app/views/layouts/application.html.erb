@@ -1,26 +1,18 @@
 <!DOCTYPE html>
 <html>
-<div class = "main">
 <head>
-
-  <title>DemoApp</title>
-  <a href="/static_pages/home">Home</a>
-  <a href="/static_pages/about">About</a>
-  <a href="/static_pages/contact">Contact</a>
-  <a href="/static_pages/help">Help</a>
-
-  <title>CS 232 Rails Development | <%= yield(:title) %></title>
-  <%= stylesheet_link_tag    "application", media: "all",
-                             "data-turbolinks-track" => true %>
+  <title><%= full_title(yield(:title)) %></title>
+  <%= stylesheet_link_tag "application", media: "all",
+                          "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
-
+  <%= render 'layouts/shim' %>
 </head>
-<section class="main"> </section>
 <body>
-
-
-<%= yield %>
-</body>
+<%= render 'layouts/header' %>
+<div class="container">
+  <%= yield %>
+  <%= render 'layouts/footer' %>
 </div>
+</body>
 </html>
