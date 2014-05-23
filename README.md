@@ -2,4 +2,4 @@
 from http://railstutorial.org/ by
 by Michael Hartl http://michaelhartl.com/
 
-Rodion.
+Rodion's.
